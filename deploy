@@ -3,7 +3,7 @@ mdbook build
 git worktree add -B gh-pages gh-pages
 
 echo "COPY DOCS"
-cp -r book/ gh-pages
+cp -r book/. gh-pages/
 cd gh-pages
 git add -A
 git commit -m 'deploy book'
